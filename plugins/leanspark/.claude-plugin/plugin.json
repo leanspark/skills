@@ -1,0 +1,9 @@
+{
+  "name": "leanspark",
+  "version": "1.4.0",
+  "description": "Running Lean for your AI agent, starter editions — stress-test a startup idea, start customer discovery. The method is Ash Maurya's Running Lean; full packs and the scored stress test are at leanspark.ai.",
+  "author": {
+    "name": "LEANSTACK",
+    "url": "https://leanspark.ai"
+  }
+}
