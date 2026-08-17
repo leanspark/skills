@@ -1,6 +1,6 @@
 {
   "name": "leanspark-skills",
-  "description": "Running Lean for your AI agent — LEANSTACK's LEANSpark Playbook Skills: stress-test a startup idea, start customer discovery.",
+  "description": "Running Lean for your AI agent. LEANSTACK's LEANSpark Playbook Skills: stress-test a startup idea, run customer discovery.",
   "owner": {
     "name": "LEANSTACK",
     "url": "https://leanspark.ai"
@@ -9,7 +9,7 @@
     {
       "name": "leanspark",
       "source": "./plugins/leanspark",
-      "description": "LEANSpark Playbook Skills, starter editions: leanspark:stress-test (Is Your Idea Worth Pursuing) and leanspark:interview (How to Talk to Customers). Each teaches the opening move of a Running Lean playbook; the full packs and the scored stress test live at leanspark.ai.",
+      "description": "LEANSpark Playbook Skills in full: leanspark:stress-test (Is Your Idea Worth Pursuing) and leanspark:interview (How to Talk to Customers), complete Running Lean choreographies with every chapter bundled. The scored stress test runs in the founder's LEANSpark workspace at leanspark.ai.",
       "version": "1.4.0"
     }
   ]
