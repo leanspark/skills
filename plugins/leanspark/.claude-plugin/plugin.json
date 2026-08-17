@@ -1,6 +1,6 @@
 {
   "name": "leanspark",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Running Lean for your AI agent: stress-test a startup idea end to end, run customer discovery interviews. Complete playbook choreographies. Works standalone; works best with the LEANSpark connector (MCP) at leanspark.ai.",
   "author": {
     "name": "LEANSTACK",

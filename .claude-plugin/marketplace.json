@@ -10,7 +10,7 @@
       "name": "leanspark",
       "source": "./plugins/leanspark",
       "description": "LEANSpark Playbook Skills in full: leanspark:stress-test (Is Your Idea Worth Pursuing) and leanspark:interview (How to Talk to Customers), complete Running Lean choreographies with every chapter bundled. The scored stress test runs in the founder's LEANSpark workspace at leanspark.ai.",
-      "version": "1.4.0"
+      "version": "1.4.1"
     }
   ]
 }
