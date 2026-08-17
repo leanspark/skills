@@ -13,7 +13,7 @@ playbook, readable by humans and runnable by agents.
 In Claude Code:
 
 ```
-/plugin marketplace add spark-59/leanspark-skills
+/plugin marketplace add leanspark/skills
 /plugin install leanspark@leanspark-skills
 ```
 
