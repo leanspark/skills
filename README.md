@@ -21,6 +21,7 @@ conversation calls for them. To pick up new skills and updates later:
 
 ```
 /plugin marketplace update leanspark-skills
+/plugin update leanspark@leanspark-skills
 ```
 
 ## The skills

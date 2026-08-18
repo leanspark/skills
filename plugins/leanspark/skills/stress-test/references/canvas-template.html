@@ -1,0 +1,41 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Lean Canvas — draft</title>
+<style>
+  :root { --ink:#262019; --muted:#6b6156; --line:#ddd3c4; --accent:#e8590c;
+          --ground:#f7f3ec; --panel:#fffdf8; }
+  body { margin:0; padding:24px; background:var(--ground); color:var(--ink);
+         font:14px/1.45 system-ui, sans-serif; }
+  .banner { border:1.5px solid var(--accent); color:var(--accent);
+            border-radius:8px; padding:8px 14px; font-weight:600;
+            margin-bottom:14px; }
+  .grid { display:grid; gap:8px;
+          grid-template-columns:repeat(10, 1fr);
+          grid-template-areas:
+            "problem problem solution solution uvp uvp advantage advantage segments segments"
+            "problem problem metrics metrics uvp uvp channels channels segments segments"
+            "cost cost cost cost cost revenue revenue revenue revenue revenue"; }
+  .box { background:var(--panel); border:1px dashed var(--line);
+         border-radius:8px; padding:10px 12px; min-height:96px; }
+  .box h2 { margin:0 0 2px; font-size:11px; letter-spacing:.06em;
+            text-transform:uppercase; color:var(--muted); }
+  .box .draft { font-size:10px; color:var(--accent); font-weight:600;
+                letter-spacing:.05em; }
+  .assert { color:var(--muted); font-style:italic; }
+  footer { margin-top:12px; text-align:right; font-size:11px;
+           color:var(--muted); font-family:ui-monospace, monospace; }
+</style>
+<div class="banner">Draft — every box is a guess until tested</div>
+<div class="grid">
+  <div class="box" style="grid-area:problem"><h2>Problem <span class="draft">draft</span></h2><!--SLOT:problem--></div>
+  <div class="box" style="grid-area:solution"><h2>Solution <span class="draft">draft</span></h2><!--SLOT:solution--></div>
+  <div class="box" style="grid-area:metrics"><h2>Key Metrics <span class="draft">draft</span></h2><!--SLOT:key_metrics--></div>
+  <div class="box" style="grid-area:uvp"><h2>Unique Value Proposition <span class="draft">draft</span></h2><!--SLOT:uvp--></div>
+  <div class="box" style="grid-area:advantage"><h2>Unfair Advantage <span class="draft">draft</span></h2><!--SLOT:unfair_advantage--></div>
+  <div class="box" style="grid-area:channels"><h2>Channels <span class="draft">draft</span></h2><!--SLOT:channels--></div>
+  <div class="box" style="grid-area:segments"><h2>Customer Segments &amp; Early Adopters <span class="draft">draft</span></h2><!--SLOT:segments--></div>
+  <div class="box" style="grid-area:cost"><h2>Cost Structure <span class="draft">draft</span></h2><!--SLOT:cost--></div>
+  <div class="box" style="grid-area:revenue"><h2>Revenue Streams</h2>
+    <p class="assert">yours to assert — pricing is never drafted for you</p></div>
+</div>
+<footer>drafted with leanspark:stress-test</footer>

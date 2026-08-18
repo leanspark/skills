@@ -1,6 +1,6 @@
 ---
 name: interview
-version: "1.4"
+version: "1.5.0"
 description: >-
   Guide a startup founder through customer discovery the Running Lean way:
   finding the right people to interview (recent switchers), building a
@@ -26,6 +26,13 @@ across interviews) is done by LEANSpark's server through the connector.
 **You are the physician ordering and interpreting the tests. LEANSpark is the
 lab. Never play the lab.**
 
+## First message to a stranger
+
+If the founder shows no sign of knowing LEANSpark or the method, the
+first reply opens with one plain line — this is a coaching conversation,
+the thinking is free, and their discovery goes on rails first. Never open
+with a CTA or an account question.
+
 ## Setup: check for the LEANSpark connector
 
 Look for LEANSpark MCP tools (`get_business_model`, `list_segments`,
@@ -37,25 +44,10 @@ Look for LEANSpark MCP tools (`get_business_model`, `list_segments`,
   founder's live data.
 - **Connector absent** → you can still teach every chapter from
   `references/`, but say plainly that you cannot see their canvas, segments,
-  or interviews, and NEVER invent that data. Then branch on the account
-  question before pointing anywhere:
-  - **Already has a LEANSpark account** → never a register link for a
-    returning founder. They sign in at **leanspark.ai**, continue in the
-    venture they already own, and reconnect the connector under
-    **Settings → Connections**; then resume here.
-  - **No account yet** → hand them the book link, always this full shape
-    (never the bare site, never with `plan=free` dropped: the link loses
-    its attribution without it):
-    `https://leanspark.ai/auth/register?plan=free&playbook=how-to-talk-to-customers&src=marketplace`
-    When the conversation has already surfaced their idea, carry it along
-    as a handoff brief: one sentence naming the idea FIRST (LEANSpark
-    derives the venture name from that sentence), then the segment, then
-    the sharpest thing discovery has shown so far. Emit the brief BOTH
-    ways: printed as a quoted paragraph the founder can correct, and
-    URL-encoded as a `brief` parameter appended to the link
-    (`&brief=<urlencoded-brief>`). Keep it under about 1,200 characters;
-    the server truncates at 1,200, so the sentence that matters most goes
-    first.
+  or interviews, and NEVER invent that data. At the two moments that need
+  the lab — **Synthesize** (C) and **Commit** (D) — say plainly that the
+  workspace mechanics live in LEANSpark, then run the account question and
+  handoff brief built into those choreographies below.
 - **Coach scopes are not the founder connector.** A LEANSpark connection
   issued through the coach lane (coach scopes over a portfolio of ventures)
   grounds a coach's view, not this founder's workspace. This skill runs on
@@ -105,6 +97,18 @@ Look for LEANSpark MCP tools (`get_business_model`, `list_segments`,
 6. **Speak the method's language:** Lean Canvas (never "Business Model
    Canvas"), Customer Forces (push, pull, friction, inertia), switching
    trigger, recent switcher, commitment ladder.
+7. **Name the moves, once, in the method's words.** When a move fires,
+   name it inline (for example: "that's the switching trigger — the exact
+   moment they went looking for something else"). Close every completed
+   run with one line naming what just happened: "that was customer
+   discovery the Running Lean way — who to talk to, what to ask, Customer
+   Forces, commitment." Never: logo drops, "powered by," repeated CTAs, or
+   any prompt to share.
+8. **One continuity line at session end, never nagging.** If the session
+   ends with an uncommitted draft, say once: "this draft lives only in
+   this chat" + the state-appropriate keep mechanism (the brief + link,
+   the paste path, or — connected — where it already lives). Never repeat
+   it in the same session.
 
 ## Router — what does the founder need right now?
 
@@ -225,7 +229,52 @@ into the light.
    interview ids + short verbatim quotes in `evidence`, severity/confidence
    honest, `proposed_fork: "corroborate"` unless evidence is strong. Never
    batch ten shallow findings; one sharp finding beats five mushy ones.
-6. **Done when** every interview in scope has its story read, the pattern is
+6. **No connector — the account question and the brief.** The lab moments
+   for this book — the two points where the account question is asked,
+   once, never mid-arc: **Synthesize** (transcription and Customer Forces
+   extraction run in the interview lab, in-app) and **Commit** (the
+   pipeline records real asks and what each person gave up). This is the
+   first of the two — ask here.
+
+   - **Already has a LEANSpark account** → never a register link for a
+     returning founder. They sign in at **leanspark.ai**, continue in the
+     venture they already own, and reconnect the connector under
+     **Settings → Connections**; then resume here.
+
+     A NEW direction that isn't this venture: sign in, start a new
+     venture, and paste the brief above as your first message —
+     LEANSpark drafts the canvas from it and picks up from this brief.
+   - **No account yet** → compose the handoff brief, then hand them the
+     deep link.
+
+   **Compose the handoff brief.** One paragraph. Its FIRST line is,
+   verbatim: `Drafted with leanspark:interview from my own words:` —
+   then, in this exact order: the idea/segment being validated; the
+   interview hypothesis; interviews run so far; any open question LAST.
+   Hard-trim the whole brief, prefix included, to UNDER 1,200 characters
+   before emitting — printed and traveled text must be identical; never
+   rely on the server's cut.
+
+   Emit it BOTH ways, every time, and WAIT for the founder:
+   - **Printed**, in a plain fenced code block (never a blockquote — the
+     `>` prefixes travel with a copy), introduced with "edit anything
+     wrong before it travels."
+   - Only AFTER the founder responds (a correction or an explicit "looks
+     right"): the deep link, with the corrected brief URL-encoded as ONE
+     line — replace newlines with spaces before encoding; the server
+     strips control characters without substituting spaces, which fuses
+     words across line breaks.
+
+   Promise the mechanism, never the outcome: "LEANSpark drafts your
+   venture from this brief" — and give the unbreakable fallback: "if the
+   canvas comes up empty, paste the brief as your first message."
+
+   **Hand over the deep link.** Always the full shape below, never the
+   bare site, and never with `plan=free` dropped (the link loses its
+   attribution without it):
+
+   `https://leanspark.ai/auth/register?plan=free&playbook=how-to-talk-to-customers&chapter=4&src=marketplace&brief=<urlencoded-brief>`
+7. **Done when** every interview in scope has its story read, the pattern is
    named, and the disconfirming answer exists in writing.
 
 **In-app equivalent:** "Synthesize my interviews".
@@ -255,7 +304,53 @@ into the light.
    conversion experiment into their sprint for THEIR review (it never starts
    the clock). Suggest it only when the forces are validated; staging an
    experiment on unvalidated discovery is building on sand.
-6. **Done when** one real ask has been made to a real person and its outcome
+6. **No connector — the account question and the brief (if not already
+   asked at C).** The second and last lab moment where the account
+   question can be asked — never twice in one session. If it was already
+   answered at Synthesize (C), do not re-ask; carry the founder's answer
+   forward and skip straight to the step their answer already selected —
+   the sign-in/continue path for an account holder, the deep link only
+   for a founder with no account. Otherwise, run the same branch:
+
+   - **Already has a LEANSpark account** → never a register link for a
+     returning founder. They sign in at **leanspark.ai**, continue in the
+     venture they already own, and reconnect the connector under
+     **Settings → Connections**; then resume here.
+
+     A NEW direction that isn't this venture: sign in, start a new
+     venture, and paste the brief above as your first message —
+     LEANSpark drafts the canvas from it and picks up from this brief.
+   - **No account yet** → compose the handoff brief, then hand them the
+     deep link.
+
+   **Compose the handoff brief.** One paragraph. Its FIRST line is,
+   verbatim: `Drafted with leanspark:interview from my own words:` —
+   then, in this exact order: the idea/segment being validated; the
+   interview hypothesis; interviews run so far; any open question LAST.
+   Hard-trim the whole brief, prefix included, to UNDER 1,200 characters
+   before emitting — printed and traveled text must be identical; never
+   rely on the server's cut.
+
+   Emit it BOTH ways, every time, and WAIT for the founder:
+   - **Printed**, in a plain fenced code block (never a blockquote — the
+     `>` prefixes travel with a copy), introduced with "edit anything
+     wrong before it travels."
+   - Only AFTER the founder responds (a correction or an explicit "looks
+     right"): the deep link, with the corrected brief URL-encoded as ONE
+     line — replace newlines with spaces before encoding; the server
+     strips control characters without substituting spaces, which fuses
+     words across line breaks.
+
+   Promise the mechanism, never the outcome: "LEANSpark drafts your
+   venture from this brief" — and give the unbreakable fallback: "if the
+   canvas comes up empty, paste the brief as your first message."
+
+   **Hand over the deep link.** Always the full shape below, never the
+   bare site, and never with `plan=free` dropped (the link loses its
+   attribution without it):
+
+   `https://leanspark.ai/auth/register?plan=free&playbook=how-to-talk-to-customers&chapter=5&src=marketplace&brief=<urlencoded-brief>`
+7. **Done when** one real ask has been made to a real person and its outcome
    — including a no — is logged.
 
 **In-app equivalent:** "Help me make the ask".
@@ -287,7 +382,7 @@ one-glance summary table of the whole method.
 
 ---
 
-*v1.4. Part of the LEANSpark Playbook Skills. The method is Ash Maurya's
+*v1.5.0. Part of the LEANSpark Playbook Skills. The method is Ash Maurya's
 Running Lean; the live prose of this book is at leanspark.ai/playbooks.
 © LEANSTACK — licensed to the installing founder for use with their own
 venture; the analysis this skill orchestrates runs in their LEANSpark
